@@ -1,0 +1,46 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    color: #333;
+}
+
+.carousel {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.movieContainer {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.moviePoster {
+    max-height: 300px;
+}
+
+.navBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ccc;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+/* You can add more styles as needed */
