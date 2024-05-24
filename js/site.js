@@ -5,6 +5,7 @@ const movies = [
     { title: "Redemption: The story of Joe Smith", poster: "images/1950sNFL.png", showTimes: ["12:00 PM", "4:00 PM", "9:00 PM"] }
 ];
 
+
 // Function to display movies in carousel
 function displayMovies() {
     const movieCarousel = document.getElementById("movieCarousel");
@@ -85,11 +86,13 @@ function initCarousel() {
     document.getElementById('prevBtn').addEventListener('click', () => {
         prevMovie();
         stopAutoScroll();
+        startAutoScroll();
     });
 
     document.getElementById('nextBtn').addEventListener('click', () => {
         nextMovie();
         stopAutoScroll();
+        startAutoScroll();
     });
 
     // Start auto-scrolling initially
